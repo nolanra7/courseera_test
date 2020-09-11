@@ -1,0 +1,56 @@
+* {box-sizing: border-box;
+}
+h1 {
+  color: navy;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.box1 {
+	border: 1px black solid;
+	margin-top: 5px;
+	margin-left: 5px;
+	min-width: 150px;
+}
+
+.inner_box{
+	border: 1px black solid;
+	width: 150px;
+	position: relative top-right;
+	text-align: center;
+	float: right;
+}
+.textBox{
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#Chicken{
+	background-color: pink;
+	font-weight: bold;
+	color: black;
+}
+
+#Beef{
+	background-color: red;
+	font-weight: bold;
+	color: white;
+}
+#Sushi{
+	background-color:tan;
+	font-weight: bold;
+	color: black;
+}
+
+@media (min-width: 992px){
+	.box1{
+		width: 33%;
+		float: left;
+	}
+}
+@media(min-width: 768px and max-width: 991px){
+	.midbox{
+		width:50%;
+		float: left;
+	}
+}
