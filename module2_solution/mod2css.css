@@ -8,9 +8,11 @@ h1 {
 
 .box1 {
 	border: 1px black solid;
-	margin-top: 5px;
-	margin-left: 5px;
-	min-width: 150px;
+	width:90%;
+	background-color: gray;
+	margin-bottom:5px;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 .inner_box{
@@ -41,16 +43,24 @@ h1 {
 	font-weight: bold;
 	color: black;
 }
-
+.row{
+	width:100%;
+}
 @media (min-width: 992px){
-	.box1{
+	.outerbox1, .outerbox2, .outerbox3{
 		width: 33%;
 		float: left;
 	}
 }
-@media(min-width: 768px and max-width: 991px){
-	.midbox{
+@media(min-width: 768px) and (max-width: 991px){
+	.outerbox1, .outerbox2{
 		width:50%;
+		float: left;
+
+	}
+	.outerbox3{
+		width:100%;
+		margin-top: 15px;
 		float: left;
 	}
 }
